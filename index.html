@@ -2,68 +2,62 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Orbis Creativa Agency</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --color-primary-red: #D72638;
-            --color-soft-black: #1C1C1E;
-        }
-        .bg-primary-red { background-color: var(--color-primary-red); }
-        .text-primary-red { color: var(--color-primary-red); }
-        .bg-soft-black { background-color: var(--color-soft-black); }
-        .text-soft-black { color: var(--color-soft-black); }
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-white text-soft-black">
-    <header class="bg-soft-black text-white px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-3">
-            <img src="https://i.ibb.co/rfTgk9r5/20250705-193523.jpg" alt="Logo Orbis Creativa" class="h-12 w-12 rounded-full object-cover">
-            <h1 class="text-2xl font-bold">Orbis Creativa Agency</h1>
+<body>
+<header class="px-6 py-5 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+        <img src="https://i.ibb.co/rfTgk9r5/20250705-193523.jpg" alt="Logo Orbis Creativa" class="h-12 w-12 rounded-full object-cover border border-white">
+        <h1 class="text-2xl font-bold">Orbis Creativa Agency</h1>
+    </div>
+    <nav class="space-x-4 font-semibold text-sm sm:text-base">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="hero">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4 flex justify-center items-center">
+        <span class="slogan-icon">🎯</span> Connecter, Créer, Inspirer
+    </h2>
+    <p class="text-gray-700 max-w-xl mx-auto text-base sm:text-lg">
+        Découvrez nos services créatifs pour donner vie à vos projets avec audace et professionnalisme.
+    </p>
+</section>
+
+<section class="py-16 px-4 max-w-4xl mx-auto" id="services">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="border rounded-xl shadow-sm p-6 hover:shadow-lg transition">
+            <h3 class="text-2xl font-semibold text-primary-red mb-2">Identité Visuelle</h3>
+            <p class="mb-4 text-gray-600">Création de logo, identité visuelle et design graphique.</p>
+            <a href="identite-visuelle.html" class="cta-button">Voir les détails</a>
         </div>
-        <nav class="space-x-4 text-white font-semibold">
-            <a href="index.html" class="hover:text-primary-red">Accueil</a>
-            <a href="index.html#services" class="hover:text-primary-red">Services</a>
-            <a href="index.html#contact" class="hover:text-primary-red">Contact</a>
-        </nav>
-    </header>
-
-    <section class="text-center py-16 px-4 max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold mb-4 text-primary-red">Connecter, Créer, Inspirer.</h2>
-        <p class="text-lg mb-12">Découvrez nos services créatifs pour donner vie à vos projets avec audace et professionnalisme.</p>
-
-        <div id="services" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div class="border rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-semibold text-primary-red mb-2">Identité Visuelle</h3>
-                <p class="mb-4">Création de logo, identité visuelle et design graphique.</p>
-                <a href="identite-visuelle.html" class="inline-block bg-primary-red text-white px-4 py-2 rounded hover:bg-red-700">Voir les détails</a>
-            </div>
-            <div class="border rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-semibold text-primary-red mb-2">Réseaux Sociaux</h3>
-                <p class="mb-4">Community management, animations créatives, publicités.</p>
-                <a href="reseaux-sociaux.html" class="inline-block bg-primary-red text-white px-4 py-2 rounded hover:bg-red-700">Voir les détails</a>
-            </div>
-            <div class="border rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-semibold text-primary-red mb-2">Script Publicitaire</h3>
-                <p class="mb-4">Idée pub, rédaction et planification stratégique.</p>
-                <a href="script-publicitaire.html" class="inline-block bg-primary-red text-white px-4 py-2 rounded hover:bg-red-700">Voir les détails</a>
-            </div>
-            <div class="border rounded-lg shadow-md p-6">
-                <h3 class="text-2xl font-semibold text-primary-red mb-2">Retouch Me</h3>
-                <p class="mb-4">Mise à jour de logos, packaging et branding.</p>
-                <a href="retouch-me.html" class="inline-block bg-primary-red text-white px-4 py-2 rounded hover:bg-red-700">Voir les détails</a>
-            </div>
+        <div class="border rounded-xl shadow-sm p-6 hover:shadow-lg transition">
+            <h3 class="text-2xl font-semibold text-primary-red mb-2">Réseaux Sociaux</h3>
+            <p class="mb-4 text-gray-600">Community management, animations créatives, publicités.</p>
+            <a href="reseaux-sociaux.html" class="cta-button">Voir les détails</a>
         </div>
-    </section>
-    <a href="https://wa.me/243840160553?text=Bonjour%20Orbis%20Creativa,%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." class="fixed bottom-4 right-4 bg-primary-red text-white p-4 rounded-full shadow-lg hover:bg-red-700">
-        WhatsApp
-    </a>
+        <div class="border rounded-xl shadow-sm p-6 hover:shadow-lg transition">
+            <h3 class="text-2xl font-semibold text-primary-red mb-2">Script Publicitaire</h3>
+            <p class="mb-4 text-gray-600">Idée pub, rédaction et planification stratégique.</p>
+            <a href="script-publicitaire.html" class="cta-button">Voir les détails</a>
+        </div>
+        <div class="border rounded-xl shadow-sm p-6 hover:shadow-lg transition">
+            <h3 class="text-2xl font-semibold text-primary-red mb-2">Retouch Me</h3>
+            <p class="mb-4 text-gray-600">Mise à jour de logos, packaging et branding.</p>
+            <a href="retouch-me.html" class="cta-button">Voir les détails</a>
+        </div>
+    </div>
+</section>
 
-    <footer class="bg-soft-black text-white text-center py-6 mt-12" id="contact">
-        <p>Contact : +243 840 160 553 | orbiscreativaagency@gmail.com | Kinshasa, RDC</p>
-    </footer>
+<footer class="text-center py-6 mt-16" id="contact">
+    <p class="text-sm sm:text-base">Contact : +243 840 160 553 | orbiscreativaagency@gmail.com | Kinshasa, RDC</p>
+</footer>
+<a href="https://wa.me/243840160553?text=Bonjour%20Orbis%20Creativa,%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services." class="floating-whatsapp">💬</a>
 </body>
 </html>

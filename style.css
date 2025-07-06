@@ -1,0 +1,71 @@
+
+:root {
+    --color-primary-red: #D72638;
+    --color-soft-black: #1C1C1E;
+    --color-light-gray: #F4F4F5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: var(--color-soft-black);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--color-soft-black);
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+section#hero {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    background-color: var(--color-light-gray);
+}
+
+.slogan-icon {
+    font-size: 1.5rem;
+    color: var(--color-primary-red);
+    margin-right: 8px;
+}
+
+.cta-button {
+    background-color: var(--color-primary-red);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b81c2c;
+}
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--color-primary-red);
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+    background-color: #b81c2c;
+}
